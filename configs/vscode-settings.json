@@ -1,0 +1,5 @@
+{
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "workbench.colorTheme": "Default Dark Modern",
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
+}

@@ -1,0 +1,103 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{2ece5b75-6728-5cf8-bb86-ee40792cfe0b}",
+    "keybindings":
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu":
+    [
+        {
+            "type": "remainingProfiles"
+        },
+        {
+            "allowEmpty": false,
+            "entries":
+            [
+                {
+                    "commandline": null,
+                    "name": null,
+                    "source": "Windows.Terminal.SSH",
+                    "type": "matchProfiles"
+                }
+            ],
+            "icon": "\ue969",
+            "inline": "auto",
+            "name": "SSH",
+            "type": "folder"
+        },
+        {
+            "allowEmpty": false,
+            "entries":
+            [
+                {
+                    "commandline": null,
+                    "name": null,
+                    "source": "Windows.Terminal.SSH",
+                    "type": "matchProfiles"
+                }
+            ],
+            "icon": "\ue969",
+            "inline": "auto",
+            "name": "SSH",
+            "type": "folder"
+        }
+    ],
+    "profiles":
+    {
+        "defaults": {},
+        "list":
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "commandline": "C:\\Users\\bimm\\AppData\\Local\\Programs\\Git\\bin\\bash.exe -i -l",
+                "guid": "{2ece5b75-6728-5cf8-bb86-ee40792cfe0b}",
+                "hidden": false,
+                "icon": "C:\\Users\\bimm\\AppData\\Local\\Programs\\Git\\usr\\share\\git\\git-for-windows.ico",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{f14dc3d2-de0b-5251-b77c-80ab687f9858}",
+                "hidden": false,
+                "name": "SSH - homelab-lxc109",
+                "source": "Windows.Terminal.SSH"
+            }
+        ]
+    },
+    "schemes": [],
+    "themes": [],
+    "warning.confirmOnClose": "never"
+}
